@@ -17,15 +17,22 @@ for (int i = 0; i < deck.Length; i++)
 
 
 // Find a larges number
-int largest = -1;
+for (int i=0 ; i<(int)Suit.Count ; i++) {
+  int largest = -1;
 
-foreach (Card card in deck) {
-if (card.value > largest) {
-    largest = card.value;
+  foreach (Card card in deck) {
+    // guard
+    if ((int)card.suit != i) continue;
+
+    if (card.value > largest) {
+      largest = card.value;
+    }
   }
+
+  Console.WriteLine((Suit)i+": "+largest);
 }
 
-Console.WriteLine(largest);
+
 
 foreach (Card card in deck) {
   Console.WriteLine(card.value+" of "+card.suit);
