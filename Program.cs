@@ -1,10 +1,11 @@
-﻿Card[] deck = new Card[20];
-
-
+﻿
+//Init start call a deck
+Card[] deck = new Card[20];
 
 //Console.WriteLine(card.value);
-//
 
+
+// Main body
 Random rand = new Random();
 
 for (int i=0; i<deck.Length ; i++) {
@@ -17,6 +18,8 @@ foreach (Card card in deck) {
   Console.WriteLine(card.value+" of "+card.suit);
 }
 
+
+// Data type
 
 enum Suit
 {
