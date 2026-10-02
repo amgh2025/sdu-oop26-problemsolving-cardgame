@@ -27,9 +27,9 @@ if (card.value > largest) {
 
 Console.WriteLine(largest);
 
-/*foreach (Card card in deck) {
+foreach (Card card in deck) {
   Console.WriteLine(card.value+" of "+card.suit);
-}*/
+}
 
 
 // Data type
